@@ -323,7 +323,7 @@ export default function App() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
           <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none transition-opacity duration-700 group-hover:bg-cyan-500/20"></div>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 font-['Space_Grotesk'] tracking-tighter">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-[7.5rem] font-bold tracking-tighter leading-[1.05] text-white font-['Space_Grotesk']">
             {t.contactTitle1} <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">{t.contactTitle2}</span>
           </h2>
           <p className="text-zinc-400 max-w-xl mx-auto mb-10 text-base md:text-lg font-light">
