@@ -63,7 +63,9 @@ export default function App() {
 
       {/* Hero Section */}
       <motion.section initial="hidden" animate="visible" variants={springFadeUp} className="max-w-7xl mx-auto px-6 pt-24 pb-32 flex flex-col justify-center min-h-[70vh] relative z-20">
-        <h2 className="text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] font-bold tracking-tighter leading-[1.05] text-white font-['Space_Grotesk'] break-words">
+        
+        {/* Ajuste exato aqui: text-4xl no mobile, sem break-words */}
+        <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-[7.5rem] font-bold tracking-tighter leading-[1.05] text-white font-['Space_Grotesk']">
           {t.heroTitle1} <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-zinc-300 to-zinc-600">{t.heroTitle2}</span>
           <span className="animate-pulse text-cyan-500 font-light ml-2" style={{ animationDuration: '0.8s' }}>|</span>
@@ -323,7 +325,7 @@ export default function App() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
           <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none transition-opacity duration-700 group-hover:bg-cyan-500/20"></div>
 
-          <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-[7.5rem] font-bold tracking-tighter leading-[1.05] text-white font-['Space_Grotesk']">
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 font-['Space_Grotesk'] tracking-tighter">
             {t.contactTitle1} <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">{t.contactTitle2}</span>
           </h2>
           <p className="text-zinc-400 max-w-xl mx-auto mb-10 text-base md:text-lg font-light">
