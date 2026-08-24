@@ -63,7 +63,7 @@ export default function App() {
 
       {/* Hero Section */}
       <motion.section initial="hidden" animate="visible" variants={springFadeUp} className="max-w-7xl mx-auto px-6 pt-24 pb-32 flex flex-col justify-center min-h-[70vh] relative z-20">
-        <h2 className="text-6xl md:text-8xl lg:text-[7.5rem] font-bold tracking-tighter leading-[1.05] text-white font-['Space_Grotesk']">
+        <h2 className="text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] font-bold tracking-tighter leading-[1.05] text-white font-['Space_Grotesk'] break-words">
           {t.heroTitle1} <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-zinc-300 to-zinc-600">{t.heroTitle2}</span>
           <span className="animate-pulse text-cyan-500 font-light ml-2" style={{ animationDuration: '0.8s' }}>|</span>
